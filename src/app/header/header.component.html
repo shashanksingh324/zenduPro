@@ -1,0 +1,35 @@
+<header class="navbar navbar-dark flex-column flex-md-row bd-navbar">
+    <a class="navbar-brand" href="#" aria-label="ZenduForms">
+        ZenduForms
+    </a>
+
+    <div class="navbar-nav-scroll">
+        <ul class="navbar-nav bd-navbar-nav flex-row">
+            <li class="nav-item" [routerLink]="['/forms']"  [routerLinkActive]="'active'">
+                <a class="nav-link"><i class="fa fa-regular fa-list-ul"></i>Forms</a>
+            </li>
+            <li class="nav-item" [routerLink]="['/customers']"  [routerLinkActive]="'active'">
+                <a class="nav-link"><i class="fa fa-solid fa-users"></i>Customers</a>
+            </li>
+            <li class="nav-item" [routerLink]="['/submissions']"  [routerLinkActive]="'active'">
+                <a class="nav-link"><i class="fa fa-waveform"></i>Submissions</a>
+            </li>
+            <li class="nav-item" [routerLink]="['/history']"  [routerLinkActive]="'active'">
+                <a class="nav-link"><i class="fa fa-history" aria-hidden="true"></i>History</a>
+            </li>
+            <li class="nav-item" [routerLink]="['/reports']"  [routerLinkActive]="'active'">
+                <a class="nav-link"><i class="fa fa-file-text-o" aria-hidden="true"></i>Reports</a>
+            </li>
+            <li class="nav-item" [routerLink]="['/workflow']"  [routerLinkActive]="'active'">
+                <a class="nav-link"><i class="fa fa-file-text-o" aria-hidden="true"></i>Workflow</a>
+            </li>
+            <li class="nav-item">
+                <!-- <a class="nav-link" href="javascript:void(0)"><i class="fa fa-file-text-o" aria-hidden="true"></i>Workflow</a> -->
+            </li>
+            <li class="nav-item d-md-flex">
+                <a class="nav-link mr-10" href="javascript:void(0)"><i class="fa fa-bell" aria-hidden="true"></i></a>
+                <a class="nav-link" href="javascript:void(0)"><i class="fa fa-sign-out" aria-hidden="true"></i></a>
+            </li>
+        </ul>
+    </div>
+</header>

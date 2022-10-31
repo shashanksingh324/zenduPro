@@ -1,0 +1,29 @@
+header {
+    background-color: #2188D9;
+}
+.navbar {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+i.fa {
+    padding-right: 5px;
+}
+ul li {
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 8px 25px;
+}
+.nav-link {
+    color: var(--bs-navbar-brand-color);
+}
+.nav-item.active {
+    background-color: #1773BB;
+}
+.navbar {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.nav-item:not(.active) {
+    cursor: pointer;
+}

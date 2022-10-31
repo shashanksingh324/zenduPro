@@ -23,13 +23,51 @@
         </div>
         <div class="col-sm-2">
             <mat-form-field appearance="outline">
-                <input matInput readonly [matDatepicker]="picker">
+                <input (focus)="picker.open()" matInput readonly [matDatepicker]="picker"
+                    formControlName="tentativeJoinDate">
                 <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
                 <mat-datepicker #picker></mat-datepicker>
             </mat-form-field>
         </div>
-        <div class="col-sm-3">
-
+        <div class="col-sm-2 slider-group">
+            <div class="btn-group slider" role="group" aria-label="Second group">
+                <button type="button" class="btn btn-primary">Map</button>
+                <button type="button" class="btn">List</button>
+            </div>
+        </div>
+        <div class="col-sm-1 exportbtn">
+            <i class="fa fa-cloud-download" aria-hidden="true"></i>Export
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-4">
+            <div class="card" *ngFor="let _d of data; let i=index;">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-sm-8">
+                            <h4 class="title">{{_d.title}}</h4>
+                            <div>
+                                <label for="">From: </label> {{_d.from}}
+                            </div>
+                            <div>
+                                <label for="">To: </label> {{_d.to}}
+                            </div>
+                            <div>
+                                <label for="">Due Date: </label> <span class="completed_color"> {{_d.dueDate | date: 'd MMMM'}}</span>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 status">
+                            <button type="button" class="btn" [ngClass]="_d.status_flag"><div class="spot"></div>{{_d.status}}</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-8">
+            <google-map width="100%" height="480px" [zoom]="zoom">
+                <map-marker *ngFor="let marker of markers" [position]="marker.position" [label]="marker.label">
+                </map-marker>
+            </google-map>
         </div>
     </div>
 </div>

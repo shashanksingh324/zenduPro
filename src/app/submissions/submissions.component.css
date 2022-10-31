@@ -5,3 +5,69 @@ input[type="search"] {
     padding: 9px 4px 9px 40px;
   background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat 13px center;
 }
+
+.form-select {
+  padding: .75rem 2.5rem .375rem 1rem;
+}
+
+::ng-deep .mat-form-field-appearance-outline .mat-form-field-wrapper {
+  margin: 0px !important;
+}
+
+::ng-deep .mat-form-field-appearance-outline .mat-form-field-subscript-wrapper {
+  padding: 0px !important;
+}
+::ng-deep .mat-form-field-appearance-outline .mat-form-field-infix {
+  padding: .75em 0 .75em 0 !important;
+}
+
+.slider .btn {
+  border: 1px solid var(--bs-gray-400) !important;
+  padding-top: 8px;
+  padding-bottom: 9px;
+}
+.slider-group {
+  text-align: end;
+}
+.exportbtn {
+  color: #2188D9;
+  margin-top: 10px;
+}
+h4.title {
+  margin-bottom: 0px;
+  font-weight: 800;
+}
+.card label {
+  color: #B8B9BC;
+  font-size: 14px;
+}
+.status .btn {
+  min-width: 140px;
+  padding: 2px 0px;
+}
+.status .spot {
+  width: 1px;
+    height: 1px;
+    border: 4px solid;
+    border-radius: 4px;
+    display: inline-block;
+    margin-right: 5px;
+}
+.card {
+  margin-bottom: 5px;
+}
+.completed_color {
+  color: #ff7447;
+}
+.uncomplete {
+  color: #ff7447;
+  border: 1px solid #ff7447;
+}
+.lowrisk {
+  color: #53D86A;
+  border: 1px solid #53D86A;
+}
+.needreviews {
+  color: #b8b9bc;
+  border: 1px solid #b8b9bc;
+}

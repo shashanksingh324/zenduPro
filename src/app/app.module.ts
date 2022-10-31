@@ -16,16 +16,20 @@ import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatMomentDateModule, MomentDateAdapter } from '@angular/material-moment-adapter';
 import { DateAdapter, MAT_DATE_FORMATS, MAT_DATE_LOCALE } from '@angular/material/core';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { MatButtonToggleModule } from '@angular/material/button-toggle';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { GoogleMapsModule } from '@angular/google-maps'
 
 export const MY_FORMATS = {
   parse: {
     dateInput: 'LL',
   },
   display: {
-    dateInput: 'DD-MM-YYYY',
+    dateInput: 'DD/MM/YYYY',
     monthYearLabel: 'MMM YYYY',
     dateA11yLabel: 'LL',
-    monthYearA11yLabel: 'DD-MM-YYYY',
+    monthYearA11yLabel: 'DD/MM/YYYY',
   },
 };
 
@@ -46,7 +50,11 @@ export const MY_FORMATS = {
     AppRoutingModule,
     BrowserAnimationsModule,
     MatDatepickerModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    MatInputModule,
+    MatButtonToggleModule,
+    MatSlideToggleModule,
+    GoogleMapsModule
   ],
   providers: [
     { provide: DateAdapter, useClass: MomentDateAdapter, deps: [MAT_DATE_LOCALE] },

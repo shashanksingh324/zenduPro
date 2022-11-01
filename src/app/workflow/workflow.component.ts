@@ -5,11 +5,8 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './workflow.component.html',
   styleUrls: ['./workflow.component.css']
 })
-export class WorkflowComponent implements OnInit {
+export class WorkflowComponent {
 
   constructor() { }
-
-  ngOnInit(): void {
-  }
 
 }
